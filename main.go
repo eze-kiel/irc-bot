@@ -27,7 +27,7 @@ func main() {
 	irccon.TLSConfig = &tls.Config{InsecureSkipVerify: true}
 	irccon.AddCallback("001", func(e *irc.Event) {
 		irccon.Join(channel)
-		irccon.Privmsg(channel, "Guess who's back 8)")
+		irccon.Privmsg(channel, "Guess who's back ( ͡° ͜ʖ ͡°)")
 	})
 	irccon.AddCallback("366", func(e *irc.Event) {})
 	irccon.AddCallback("PRIVMSG", func(e *irc.Event) {
