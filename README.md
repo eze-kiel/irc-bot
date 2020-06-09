@@ -43,8 +43,6 @@ __NO PLS IS NEEDED HERE__
 
 `hey bot`
 
-`how are you bot ?`
-
 `wakanda`
 
 ## Notes
