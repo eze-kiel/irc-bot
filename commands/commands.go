@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 type chuck struct {
@@ -108,6 +109,7 @@ func Math() string {
 
 // Xkcd returns a XKCD's random comic
 func Xkcd() string {
+	rand.Seed(time.Now().UnixNano())
 	comicNumber := rand.Intn(2317)
 	comicNumberStr := strconv.Itoa(comicNumber)
 	resp, err := http.Get("https://xkcd.com/" + comicNumberStr + "/info.0.json")
