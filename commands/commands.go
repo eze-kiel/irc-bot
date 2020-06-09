@@ -51,7 +51,7 @@ func ChuckFact() string {
 
 // Help displays the differents options available
 func Help() string {
-	return "COMMANDS I KNOW :  help pls, chuck fact pls, number fact pls, year fact pls, math fact pls, date fact pls, xkcd pls, yes or no pls, idea pls, kanye pls, motivation pls"
+	return "Commands are detailled here : https://github.com/eze-kiel/irc-bot/blob/master/README.md"
 }
 
 // Trivia returns a fun fact about a number
