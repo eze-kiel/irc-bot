@@ -8,7 +8,7 @@ A shitty but funny IRC bot written in Go.
 
 ## Commands
 
-EACH COMMAND MUST END WITH 'pls' : e.g. `help pls`
+__EACH COMMAND MUST END WITH 'pls'  e.g. : ` help pls`__
 
 `help` : sends the link to this page
 
