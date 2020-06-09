@@ -69,6 +69,8 @@ func chatWithBot(con *irc.Connection, e *irc.Event) {
 		con.Privmsg(channel, commands.Kanye())
 	case "motivation pls":
 		con.Privmsg(channel, commands.Motivation())
+	case "computer quote pls":
+		con.Privmsg(channel, commands.DevQuote())
 	}
 
 }

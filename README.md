@@ -30,6 +30,8 @@ __EACH COMMAND MUST END WITH 'pls'  e.g. : ` help pls`__
 
 `motivation` : sends a motivational sentence
 
+`computer quote` : sends a computer-related quote
+
 ### Others
 
 `xkcd` : sends the link to a random XKCD comic (<3)

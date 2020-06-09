@@ -35,6 +35,11 @@ type motivSpeech struct {
 	Affirmation string `json:"affirmation"`
 }
 
+type devQuote struct {
+	Quote  string `json:"en"`
+	Author string `json:"author"`
+}
+
 // ChuckFact returns a Chuck Norris fact
 func ChuckFact() string {
 	resp, err := http.Get("https://api.chucknorris.io/jokes/random")
@@ -183,4 +188,19 @@ func Motivation() string {
 	var motiv motivSpeech
 	json.Unmarshal([]byte(bodyBytes), &motiv)
 	return motiv.Affirmation
+}
+
+//DevQuote returns a dev quote
+func DevQuote() string {
+	resp, err := http.Get("https://programming-quotes-api.herokuapp.com/quotes/random")
+	if err != nil {
+		return "I had a problem..."
+	}
+	defer resp.Body.Close()
+
+	bodyBytes, err := ioutil.ReadAll(resp.Body)
+
+	var quote devQuote
+	json.Unmarshal([]byte(bodyBytes), &quote)
+	return quote.Quote + " -" + quote.Author
 }
