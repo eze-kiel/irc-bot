@@ -37,3 +37,16 @@ __EACH COMMAND MUST END WITH 'pls'  e.g. : ` help pls`__
 `yes or no` : returns yes or no
 
 `idea` : returns a business idea
+
+### Chat with the bot
+__NO PLS IS NEEDED HERE__
+
+`hey bot`
+
+`how are you bot ?`
+
+`wakanda`
+
+## Notes
+
+All commands are case insensitive.
